@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #1a082d;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #c77dff;
+  text-shadow: 0 0 10px #9d4edd;
+}
+
+/* PROFESSIONAL GROUPED BOX */
+.professional-section {
+  margin-bottom: 60px;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2b0b4a; /* dark violet background */
+}
+
+.sub-section h2 {
+  margin-bottom: 15px;
+}
+
+.sub-section p, 
+.sub-section ul {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.sub-section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.sub-section a,
+.contact-section a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* PORTFOLIO SECTIONS */
+.portfolio-section {
+  margin-bottom: 60px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #2b0b4a; /* plain dark violet */
+}
+
+.portfolio-section h2 {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* MEDIA GRID */
+.media-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-wrapper video {
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+/* Make portfolio bigger */
+.media-grid.vertical video {
+  width: 250px;
+  height: 450px;
+}
+
+.media-grid.horizontal video {
+  width: 450px;
+  height: 250px;
+}
+
+/* Caption below video */
+.caption {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #e0aaff;
+  text-align: center;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  margin-top: 60px;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #2b0b4a;
+}
+
+/* VIDEO HOVER */
+video:hover {
+  transform: scale(1.05);
+}
